@@ -1,6 +1,6 @@
 # Welcome to my 'Project Fletcher' repo!   
 
-For this project at Metis, I used supervised learning (classification), Amazon Web Services, PostgreSQL, Flask, and HTML/CSS to create a web app that consolidates data on housing throughout the city. Users can find information on complaints about the building and area, crime rates, as well as the 'Sketchy Landlord' index, created by a classification model trained on data where tenants ended up suing their landlords.
+For this project at Metis, I used unsupervised learning with non-negative matrix factorization, Word2Vec, Markov chains, Flask, and HTML/CSS to create a web app that allows the user to find similar articles to a given input. Users can also play with a random press release generator that creates press releases for select topics using a Markov chain generator.
 
 #### [Web App Demo](https://drive.google.com/open?id=1nC9EIgTvhmlAQ6HY3sIBLLNa6A2MD0TX)
 
