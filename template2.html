@@ -24,9 +24,9 @@
   <body>
     <center><h1>{{ title }}</h1>
       <br>
-      <h3> Possible Topic Detected: {{ topic }} </h3>
-    <table border="1" cellpadding="10">
-    {% for x in sim %}
+      <h3> Possible Topic Detected: {{ topic }} </h3> <!-- printing most relevant topic by cosine similarity -->
+    <table border="1" cellpadding="10"> <!-- printing articles and some related info, rendered by Flask app -->
+    {% for x in sim %} 
         <tr>
           <td colspan="2">{{ x[0] }}</td>
         <tr>
