@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      .container {
+        max-width: 1000px;
+      }
+      body {
+        background-color: #ebebe0;
+        color: #0f0f0a;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+      }
+      table, th, td {
+        border: 2px solid #33334d;
+        padding: 15px;
+      }
+      tr:nth-child(even) {background-color:#d6d6c2}
+
+    </style>
+  </head>
+  <body>
+    <center><h1>{{ title }}</h1>
+      <br>
+      <h3> Possible Topic Detected: {{ topic }} </h3>
+    <table border="1" cellpadding="10">
+    {% for x in sim %}
+        <tr>
+          <td colspan="2">{{ x[0] }}</td>
+        <tr>
+          <td>{{ x[1] }}</td>
+          <td>{{ x[2] }}</td>
+        </tr>
+        <br>
+    {% endfor %}
+  </table>
+ </center>
+ <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+ <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   </body>
+ </html>

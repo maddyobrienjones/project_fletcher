@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOJ Press Releases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      .container {
+        max-width: 1000px;
+      }
+      body {
+        background-color: #ebebe0;
+        color: #0f0f0a;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+      }
+    </style>
+  </head>
+  <body>
+    <br>
+    <div class="container">
+      <center><h1>Department of Justice</h1>
+        <br>
+        <h2>Press Release Search</h2>
+        <br>
+        <br>
+      <form role="form" method='POST' action='/score'>
+        <div class="form-group">
+          <input type="text" name="url" class="form-control" id="url-box" placeholder="What are you looking for?" style="max-width: 400px;" autofocus required>
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+<br>
+<br>
+<br>
+<h4> Press Release Generator
+  <br>
+    <form role="form" method='POST' action='/gen'>
+      <div>
+      <select name= "topics" method="POST" action="/gen">
+    {% for topic in topics %}
+    <option value= "{{topic}}" SELECTED>{{topic}}</option>"
+    {% endfor %}
+    </select>
+    <button type="submit" class="btn btn-default">Generate</button>
+</div>
+</form>
+<br>
+<br>
+<br>
+<br>
+<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Seal_of_the_United_States_Department_of_Justice.svg/2000px-Seal_of_the_United_States_Department_of_Justice.svg.png" alt="DOJ logo", width='250',height='300'>
+
+    </center>
+    </div>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
