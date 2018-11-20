@@ -23,7 +23,7 @@
         <h2>Press Release Search</h2>
         <br>
         <br>
-      <form role="form" method='POST' action='/score'>
+      <form role="form" method='POST' action='/score'><!-- search bar for relevant press releases -->
         <div class="form-group">
           <input type="text" name="url" class="form-control" id="url-box" placeholder="What are you looking for?" style="max-width: 400px;" autofocus required>
         </div>
@@ -34,7 +34,7 @@
 <br>
 <h4> Press Release Generator
   <br>
-    <form role="form" method='POST' action='/gen'>
+    <form role="form" method='POST' action='/gen'> <!-- drop down for generator for select topics -->
       <div>
       <select name= "topics" method="POST" action="/gen">
     {% for topic in topics %}
